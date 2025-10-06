@@ -43,7 +43,6 @@ app.get('/login', (req, res) => {
 });
 
 // método de register backend
-// método de register backend
 app.post('/register', async (req, res) => {
     const user = req.body.user;
     const name = req.body.name;
@@ -56,9 +55,9 @@ app.post('/register', async (req, res) => {
     // consulta
     connection.query('INSERT INTO users SET ?', { user: user, name: name, rol: rol, pass: passwordHaash }, async (error, results) => {
         if (error) {
-            console.log("❌ Error al registrar usuario:", error);
+            console.log(" Error al registrar usuario:", error);
         } else {
-            // 👉 Imprimir en consola los datos del usuario registrado
+            //  Con este comando puedo ver los datos que se inserten
             console.log('Registro insertado con ID:', results.insertId);
             console.log("Nuevo usuario registrado en la base de datos medify:");
             console.log("Usuario:", user);
@@ -67,7 +66,7 @@ app.post('/register', async (req, res) => {
             console.log("Contraseña encriptada:", passwordHaash);
             console.log("-------------------------");
 
-            // renderizamos con alerta (lo que ya tenías)
+            // renderizar  alerta 
             res.render('register', {
                 alert: true,
                 alertTitle: "Registro completado",
