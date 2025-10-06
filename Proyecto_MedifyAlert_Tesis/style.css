@@ -1,0 +1,257 @@
+
+body {
+    
+    /* Degradado + imagen más visible */
+    background: 
+        linear-gradient(rgba(227, 242, 253, 0.5), rgba(252, 228, 236, 0.5)),
+        url("fondo.jpg") no-repeat center center fixed;
+    
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+/* ==== NAVBAR PERSONALIZADA ==== */
+.navbar-custom {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0, 0, 128, 0.9);
+    padding: 10px 25px;
+    border-radius: 50px;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.navbar-custom ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-custom ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: color 0.3s;
+    padding: 5px 10px;
+}
+
+.navbar-custom ul li a:hover {
+    color: #ffcc80;
+}
+
+/* Scroll suave */
+html {
+    scroll-behavior: smooth;
+}
+
+
+/* ==== SCROLL SUAVE ==== */
+html {
+    scroll-behavior: smooth;
+}
+
+/* ==== CONTENEDORES ==== */
+.contenedor {
+    text-align: center;
+    padding: 30px;
+    max-width: 800px;
+    margin: 100px auto 40px auto;
+    background-color: rgb(177, 221, 238);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+
+.contenedor:hover {
+    transform: scale(1.02);
+}
+
+/* ==== BOTONES ==== */
+.boton-redireccion {
+    background-color: blue;
+    color: white;
+    padding: 10px 20px;
+    display: inline-block;
+    margin-top: 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.boton-redireccion:hover {
+    background-color: darkblue;
+}
+
+/* ==== TÍTULOS ==== */
+h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+h1 .icono {
+    width: 100px;
+    height: auto;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* ==== COLORES SECCIONES ==== */
+#Inicio {
+    background-color: rgb(177, 221, 238);
+}
+
+#Informacion {
+    background-color: rgb(200, 240, 220);
+}
+
+#Registro {
+    background-color: rgb(220, 220, 240);
+}
+
+#Nosotros {
+    background-color: rgb(240, 200, 220);
+}
+
+#Contacto {
+    background-color: rgb(238, 221, 229);;
+}
+
+/* ==== CARRUSEL ==== */
+#Nosotros .carousel-inner {
+    max-height: 350px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+#Nosotros img {
+    object-fit: cover;
+}
+
+#Contacto .carousel-inner {
+    max-height: 350px;       /* altura máxima del carrusel */
+    border-radius: 10px;
+    overflow: hidden;
+    margin-top: 20px;
+    background-color: #000;  /* 👈 fondo negro para cuando la imagen no llena */
+    display: flex;
+    align-items: center;     /* centra la imagen verticalmente */
+    justify-content: center; /* centra la imagen horizontalmente */
+}
+#Contacto img {
+    max-height: 350px;       /* 👈 se ajusta a la altura del carrusel */
+    width: auto;             /* ancho automático */
+    object-fit: contain;     /* 👈 ahora se ve la imagen entera sin recortar */
+    margin: auto;            /* centrada */
+    background-color: #000;  /* 👈 relleno negro */
+}
+
+
+/* ==== BOTONES PERSONALIZADOS ==== */
+.boton-redireccion {
+    display: inline-block;
+    padding: 12px 28px;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 50px;
+    background: linear-gradient(135deg, #4e54c8, #8f94fb); /* degradado moderno */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+/* Efecto hover */
+.boton-redireccion:hover {
+    transform: translateY(-3px); /* se eleva un poco */
+    background: linear-gradient(135deg, #8f94fb, #4e54c8); /* invierte colores */
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.3);
+}
+
+
+
+/* ==== FORMULARIO CONTACTO y sus estilos ==== */
+.contacto-container {
+    max-width: 600px;
+    margin: 120px auto; /* baja el formulario  */
+    padding: 30px;
+    background: rgba(163, 189, 228, 0.9);
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    text-align: left;
+}
+
+.contacto-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.formulario-contacto {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.formulario-contacto input,
+.formulario-contacto textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #aaa;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+
+.formulario-contacto input:focus,
+.formulario-contacto textarea:focus {
+    border-color: #4e54c8;
+    outline: none;
+    box-shadow: 0 0 5px rgba(78, 84, 200, 0.5);
+}
+
+.formulario-contacto .btn {
+    background: linear-gradient(135deg, #4e54c8, #8f94fb);
+    color: white;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    padding: 12px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.formulario-contacto .btn:hover {
+    background: linear-gradient(135deg, #8f94fb, #4e54c8);
+    transform: scale(1.03);
+}
+
+
+.footer {
+  position: fixed; 
+  bottom: 0; /* pegado al final */
+  left: 0;
+  width: 100%; 
+  text-align: center;
+  padding: 6px;
+  color: white;
+  font-weight: bold;
+
+ 
+  background-color: #2128a7;
+  background-size: 1400% 1400%;
+ 
+  box-shadow: 0 -2px 10px rgba(0,0,0,0.3); /* sombra arriba del footer */
+}
+
+

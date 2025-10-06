@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MedifyAlert</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+    <ul>
+        <li><a href="#Inicio">Inicio</a></li>
+        <li><a href="#Informacion">Información</a></li>
+        <li><a href="#Registro">Registro</a></li>
+    </ul>
+</nav>
+
+    <!-- SECCIÓN INICIO -->
+    <div class="contenedor" id="Inicio">
+        <h1>
+            <img src="Iconomedify.png" alt="Icono MedifyAlert" class="icono">
+            MedifyAlert
+        </h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni fugiat sequi earum accusamus...</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti illum cum eveniet ullam consequuntur...</p>
+        <a href="#" class="boton-redireccion">Botón</a>
+    </div>
+
+    <!-- SECCIÓN INFORMACIÓN -->
+    <div class="contenedor" id="Informacion">
+        <h2>Información</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut officia debitis ex dolor! Rerum eum suscipit distinctio modi pariatur sit optio ullam officiis debitis, impedit, doloremque, possimus neque? Aliquid, dolor?</p>
+    </div>
+
+    <!-- Nosotros -->
+    <div class="contenedor" id="Nosotros">
+        <h2>Nosotros</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam cupiditate blanditiis repudiandae enim modi ex reiciendis saepe aliquid eos optio excepturi ad voluptatem aperiam officiis impedit repellendus consequatur, tempore rerum!</p>
+    </div>
+
+</body>
+</html>
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+/* ==========================
+   ESTILOS GENERALES
+========================== */
+body, html {
+    font-family: 'Times New Roman', Times, serif;
+    width: 100%;
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+    background: url(fondo.jpg) center center / cover no-repeat;
+}
+
+/* ==========================
+   NAVBAR
+========================== */
+.navbar {
+    background-color: rgba(0, 0, 128, 0.8); /* azul semitransparente */
+    padding: 15px 0;
+    text-align: center;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.navbar ul li a:hover {
+    color: #ffcc80;
+}
+
+
+.contenedor {
+    text-align: center;
+    padding: 30px;
+    max-width: 800px;
+    margin: 40px auto;
+    background-color: rgb(177, 221, 238);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* corregido */
+}
+
+
+.boton-redireccion {
+    background-color: blue;
+    color: white;
+    padding: 10px 20px;
+    display: inline-block;
+    margin-top: 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.boton-redireccion:hover {
+    background-color: darkblue;
+}
+
+
+h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+h1 .icono {
+    width: 100px;
+    height: auto;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+
+#Inicio {
+    background-color: rgb(177, 221, 238);
+}
+
+#Informacion {
+    background-color: rgb(200, 240, 220);
+}
+
+#Nosotros {
+    background-color: rgb(240, 200, 220);
+}
+
+
+
+

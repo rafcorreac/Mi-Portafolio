@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MedifyAlert - Contacto</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar-custom">
+        <ul>
+            <li><a href="index.html#Inicio">Inicio</a></li>
+            <li><a href="index.html#Informacion">Información</a></li>
+            <li><a href="index.html#Registro">Registro</a></li>
+            <li><a href="Contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <!-- FORMULARIO DE CONTACTO -->
+    <div class="contacto-container">
+        <h2>Contáctanos</h2>
+        <form action="https://formspree.io/f/mgvnzoyv" method="POST" class="formulario-contacto">
+
+            <label for="name">Escriba su Nombre</label>
+            <input type="text" name="name" id="name" placeholder="Nombre (Obligatorio)" required>
+
+            <label for="name">Segundo nombre</label>
+            <input type="text" name="name" id="name" placeholder="Segundo Nombre(opcional)" >
+
+            <label for="apellido">Apellido</label>
+            <input type="text" name="apellido" id="apellido" placeholder="Apellido(Obligatorio)" required>
+
+            <label for="telefono">Teléfono</label>
+            <input type="tel" name="telefono" id="telefono" placeholder="Teléfono (Opcional)" >
+
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" placeholder="Email (Obligatorio)" required>
+
+            <label for="message">Mensaje</label>
+            <textarea name="message" id="message" cols="30" rows="5" placeholder="Mensaje"></textarea>
+
+            <input class="btn" type="submit" value="Enviar">
+
+        </form>
+    </div>
+
+     <div class="footer">
+  <p>Copyright© 2025 - MedifyAlert</p>
+</div>
+
+
+    <!-- Scripts de Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
+</html>
