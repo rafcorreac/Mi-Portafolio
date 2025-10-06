@@ -1,2 +1,2 @@
 Este es mi portafolio de proyectos, que actualmente incluye tres desarrollos donde se puede evidenciar mi manejo de tecnologías como HTML, CSS, Node.js y MySQL, entre otras. Actualmente, estoy trabajando en la página web de mi tesis, la cual ya puede descargarse y cuenta con algunas funcionalidades activas, como el envío de formularios para recibir feedback sobre nuestra aplicación(Actualmente en desarrollo al igual que la Web).
-Esto con el fin de que puedan ver mis habilidades y conocimientos que cuento actualmente.
+Esto con el fin de que puedan ver mis habilidades y conocimientos que cuento actualmente para ver si cumplo con los requerimientos en su práctica profesional.
