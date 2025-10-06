@@ -1,0 +1,10 @@
+#menu a {
+    font-size: 20px;
+    font-weight:bold;   
+}
+
+
+.carousel-inner{
+    max-height: 30rem;
+}
+
